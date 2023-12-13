@@ -8,7 +8,7 @@
       "service": "com.sap.cloud.udm",
       "endpoint":"reporting",
       "csrfProtection": false,
-      "authenticationType": "none"
+      "authenticationType": "xsuaa"
     },
     {
       "source": "^(.*)$",

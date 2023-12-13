@@ -17,7 +17,7 @@
     },
     "dataSources": {
       "mainService": {
-        "uri": "reporting/reports/v1/monthlySubaccountsCost?fromDate=202101&toDate=202109",
+        "uri": "https://uas-reporting.cfapps.eu10.hana.ondemand.com/reports/v1/monthlySubaccountsCost?fromDate=202101&toDate=202109",
         "type": "JSON"
         }
     }
