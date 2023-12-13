@@ -9,7 +9,8 @@ sap.ui.define([
 
         return Controller.extend("saprestapplication.controller.Main", {
             onInit: function () {
-
+                const oDataModel = this.getOwnerComponent().getModel('reporting');
+                this.getView().setModel(oDataModel, "DataModel")
             }
         });
     });

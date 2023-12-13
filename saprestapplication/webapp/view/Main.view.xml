@@ -2,6 +2,41 @@
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
-        <content />
+        <content>
+            <Table id="table1" items="{path: 'DataModel>/content'}" class="sapUiSizeCompact">
+                <columns>
+                    <Column id="col1">
+                        <Label id="_IDGenLabel1" text="Subaccount"/>
+                    </Column>
+                    <Column id="col2">
+                        <Label id="_IDGenLabel2" text="Date"/>
+                    </Column>
+                    <Column id="_IDGenColumn1">
+                        <Label id="_IDGenLabel3" text="Service"/>
+                    </Column>
+                    <Column id="_IDGenColumn2">
+                        <Label id="_IDGenLabel4" text="Usage"/>
+                    </Column>
+                    <Column id="_IDGenColumn3">
+                        <Label id="_IDGenLabel5" text="Metric"/>
+                    </Column>
+                    <Column id="_IDGenColumn4">
+                        <Label id="_IDGenLabel6" text="Cost"/>
+                    </Column>
+                    <Column id="_IDGenColumn5">
+                        <Label id="_IDGenLabel7" text="Currency"/>
+                    </Column>
+                    </columns>
+                    <ColumnListItem id="_IDGenColumnListItem1">
+                        <Text id="_IDGenText1" text="{DataModel>subaccountName}"/>
+                        <Text id="_IDGenText2" text="{DataModel>reportYearMonth}"/>
+                        <Text id="_IDGenText3" text="{DataModel>serviceName}"/>
+                        <Text id="_IDGenText4" text="{DataModel>usage}"/>
+                        <Text id="_IDGenText5" text="{DataModel>metricName}"/>
+                        <Text id="_IDGenText6" text="{DataModel>cost}"/>
+                        <Text id="_IDGenText7" text="{DataModel>currency}"/>
+                    </ColumnListItem>
+            </Table>
+        </content>
     </Page>
 </mvc:View>
