@@ -10,7 +10,7 @@ modules:
   - name: SapRestApp-destination-service
     group: destinations
     properties:
-      forwardAuthToken: false
+      forwardAuthToken: true
       name: ui5
       url: https://ui5.sap.com
   - name: udm-resource
@@ -63,7 +63,7 @@ resources:
       init_data:
         instance:
           destinations:
-          - Authentication: NoAuthentication
+          - Authentication: xsuaa
             Name: ui5
             ProxyType: Internet
             Type: HTTP
